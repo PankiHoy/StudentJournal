@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D70256942643274A00B0D51C /* MKJournal.m in Sources */ = {isa = PBXBuildFile; fileRef = D70256932643274A00B0D51C /* MKJournal.m */; };
 		D77D40BD26427C4A00CB72C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D77D40BC26427C4A00CB72C9 /* main.m */; };
+		D77D40C626427C6400CB72C9 /* MKStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = D77D40C526427C6400CB72C9 /* MKStudent.m */; };
+		D77D40CA26427D3100CB72C9 /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = D77D40C926427D3100CB72C9 /* Subject.m */; };
+		D77D40CE26427DEF00CB72C9 /* MKDayOfSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = D77D40CD26427DEF00CB72C9 /* MKDayOfSubject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D70256922643274A00B0D51C /* MKJournal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKJournal.h; sourceTree = "<group>"; };
+		D70256932643274A00B0D51C /* MKJournal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKJournal.m; sourceTree = "<group>"; };
 		D77D40B926427C4A00CB72C9 /* StudentJournal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StudentJournal; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77D40BC26427C4A00CB72C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D77D40C426427C6400CB72C9 /* MKStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKStudent.h; sourceTree = "<group>"; };
+		D77D40C526427C6400CB72C9 /* MKStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKStudent.m; sourceTree = "<group>"; };
+		D77D40C826427D3100CB72C9 /* Subject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
+		D77D40C926427D3100CB72C9 /* Subject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
+		D77D40CC26427DEF00CB72C9 /* MKDayOfSubject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKDayOfSubject.h; sourceTree = "<group>"; };
+		D77D40CD26427DEF00CB72C9 /* MKDayOfSubject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKDayOfSubject.m; sourceTree = "<group>"; };
+		D77D40CF26427E6D00CB72C9 /* MKIAmStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKIAmStudent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D70256912643273C00B0D51C /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				D70256922643274A00B0D51C /* MKJournal.h */,
+				D70256932643274A00B0D51C /* MKJournal.m */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
 		D77D40B026427C4A00CB72C9 = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +79,49 @@
 		D77D40BB26427C4A00CB72C9 /* StudentJournal */ = {
 			isa = PBXGroup;
 			children = (
+				D77D40D02642931400CB72C9 /* Model */,
 				D77D40BC26427C4A00CB72C9 /* main.m */,
 			);
 			path = StudentJournal;
+			sourceTree = "<group>";
+		};
+		D77D40C326427C5700CB72C9 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				D77D40C426427C6400CB72C9 /* MKStudent.h */,
+				D77D40C526427C6400CB72C9 /* MKStudent.m */,
+				D77D40CF26427E6D00CB72C9 /* MKIAmStudent.h */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		D77D40C726427D1200CB72C9 /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				D77D40C826427D3100CB72C9 /* Subject.h */,
+				D77D40C926427D3100CB72C9 /* Subject.m */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
+		D77D40CB26427DDF00CB72C9 /* DayOfSubject */ = {
+			isa = PBXGroup;
+			children = (
+				D77D40CC26427DEF00CB72C9 /* MKDayOfSubject.h */,
+				D77D40CD26427DEF00CB72C9 /* MKDayOfSubject.m */,
+			);
+			path = DayOfSubject;
+			sourceTree = "<group>";
+		};
+		D77D40D02642931400CB72C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D70256912643273C00B0D51C /* Journal */,
+				D77D40CB26427DDF00CB72C9 /* DayOfSubject */,
+				D77D40C726427D1200CB72C9 /* Subject */,
+				D77D40C326427C5700CB72C9 /* Student */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +181,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D77D40BD26427C4A00CB72C9 /* main.m in Sources */,
+				D77D40C626427C6400CB72C9 /* MKStudent.m in Sources */,
+				D70256942643274A00B0D51C /* MKJournal.m in Sources */,
+				D77D40CE26427DEF00CB72C9 /* MKDayOfSubject.m in Sources */,
+				D77D40CA26427D3100CB72C9 /* Subject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
